@@ -1,0 +1,37 @@
+/*this applies CSS to the body of the HTML*/
+body{
+  background-color:rgb(240, 222, 240);
+}
+
+/*this applies CSS to the myDiv id of the HTML*/
+.myDiv {
+border: 5px solid white;
+border-radius: 5px;
+background-color: white;    
+
+padding-bottom: 10px;
+margin-bottom: 5px;
+}
+
+/* this applies CSS to the title class*/
+.title{
+text-align: center
+}
+
+/* this applies CSS to the ward-el id*/
+#Error-el{
+color: red;
+font-family: bold;
+}
+
+/* this applies CSS to the input*/
+input {
+border: 0;
+padding: 10px;
+font-size: 18px;
+}
+input[type="submit"] {
+background: red;
+color: white;
+}
+

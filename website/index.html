@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>covid-19 survey</title>
+	<link href="style.css" rel="stylesheet" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="myDiv ">
+      <h2 class="title">The Study Of <b>COVID-19's</b> Affects On Classism In<i>Mississauga</i></h2>
+      <img src="https://www.insauga.com/sites/default/files/imagecache/lead-image-full/article/2018/11/misscondos.jpg ">
+      <h2>By Hameez Iqbal, Shardul Bhardwaj, and Brandon Nguyen</h2>
+    </div>
+  </header>
+
+    <!--Title -->
+    <div class="myDiv ">
+      <h3>This is a survey for people who live in Mississauga to see how classism has affected people</h3>
+    </div>
+
+    <!--First question of the survey. Insert link to ward information -->
+    <div class="myDiv">
+      <h3>1. What ward do you live in Mississauga?</h3>
+      <input type="radio" name="ward" onclick="setWard(1)">Ward 1</input><br>
+      <input type="radio" name="ward" onclick="setWard(2)">Ward 2</input><br>
+      <input type="radio" name="ward" onclick="setWard(3)">Ward 3</input><br>
+      <input type="radio" name="ward" onclick="setWard(4)">Ward 4</input><br>
+      <input type="radio" name="ward" onclick="setWard(5)">Ward 5</input><br>
+      <input type="radio" name="ward" onclick="setWard(6)">Ward 6</input><br>
+      <input type="radio" name="ward" onclick="setWard(7)">Ward 7</input><br>
+      <input type="radio" name="ward" onclick="setWard(8)">Ward 8</input><br>
+      <input type="radio" name="ward" onclick="setWard(9)">Ward 9</input><br>
+      <input type="radio" name="ward" onclick="setWard(10)">Ward 10</input><br>
+      <input type="radio" name="ward" onclick="setWard(11)">Ward 11</input><br>
+    </div>
+
+    <!--Second question of the survey  -->
+    <div class="myDiv ">
+      <h3>2. If you feel comfortable, what is your gender?</h3>
+
+      <input type="radio" name="gender" onclick="setGender('Male')">Male</input><br>
+      <input type="radio" name="gender" onclick="setGender('Female')">Female</input><br>
+      <input type="radio" name="gender" onclick="setGender('Other')">Other</input><br>
+
+    </div>
+
+    <!--Third question of the survey  -->
+    <div class="myDiv ">
+      <h3>3. If you feel comfortable, what is your age?</h3>
+
+      <input type="radio" name="age" onclick="setAge('0 - 17')">0 - 17</input><br>
+      <input type="radio" name="age" onclick="setAge('18 - 25')">18 - 25</input><br>
+      <input type="radio" name="age" onclick="setAge('26 - 30')">26 - 30</input><br>
+      <input type="radio" name="age" onclick="setAge('30 - 40')">30 - 40</input><br>
+      <input type="radio" name="age" onclick="setAge('41 - 50')">41 - 50</input><br>
+      <input type="radio" name="age" onclick="setAge('51 - 60')">51 - 60</input><br>
+      <input type="radio" name="age" onclick="setAge('61 - 70')">61 - 70</input><br>
+      <input type="radio" name="age" onclick="setAge('71 - 80')">71 - 80</input><br>
+      <input type="radio" name="age" onclick="setAge('81+')">81+</input><br>
+
+    </div>
+
+    <!--Fourth question of the survey  -->
+    <div class="myDiv ">
+      <h3>4. What is your completed highest level of education?</h3>
+
+      <input type="radio" name="education" onclick="setEducation('below highschool diploma')">below highschool diploma</input><br>
+      <input type="radio" name="education" onclick="setEducation('highschool diploma')">highschool diploma</input><br>
+      <input type="radio" name="education" onclick="setEducation('college diploma')">college diploma</input><br>
+      <input type="radio" name="education" onclick="setEducation('undergraduate degree')">undergraduate degree</input><br>
+      <input type="radio" name="education" onclick="setEducation('graduate degree')">graduate degree</input><br>
+
+    </div>
+
+    <!--Fifth question of the survey  -->
+    <div class="myDiv ">
+      <h3>5. What is your yearly income of household?</h3>
+
+      <input type="radio" name="income" onclick="yearlyIncome('0 - 25k')">0 - 25k</input><br>
+      <input type="radio" name="income" onclick="yearlyIncome('25k - 40k')">25k - 40k</input><br>
+      <input type="radio" name="income" onclick="yearlyIncome('40k - 50k')">40k - 50k </input><br>
+      <input type="radio" name="income" onclick="yearlyIncome('50k - 60k')">50k - 60k</input><br>
+      <input type="radio" name="income" onclick="yearlyIncome('60k - 70k')">60k - 70k</input><br>
+      <input type="radio" name="income" onclick="yearlyIncome('70k - 80k')">70k - 80k </input><br>
+      <input type="radio" name="income" onclick="yearlyIncome('80k - 90k')">80k - 90k</input><br>
+      <input type="radio" name="income" onclick="yearlyIncome('90k - 100k')">90k - 100k</input><br>
+      <input type="radio" name="income" onclick="yearlyIncome('100k+')">100k+ </input><br>
+
+    </div>
+
+    <!--Sixth question of the survey  -->
+    <div class="myDiv ">
+      <h3>6. Have you gotten the COVID-19 vaccine?</h3>
+
+      <input type="radio" name="vaccine" onclick="vaccine('yes')">Yes</input><br>
+      <input type="radio" name="vaccine" onclick="vaccine('no')">No</input><br>
+
+    </div>
+
+    <!--Seventh question of the survey  -->
+    <div class="myDiv ">
+      <h3>7. Rate your living condition from a scale from 1-10 (house, food, etc)</h3>
+
+      <input type="radio" name="livingConditions" onclick="homeConditions(1)">1</input><br>
+      <input type="radio" name="livingConditions" onclick="homeConditions(2)">2</input><br>
+      <input type="radio" name="livingConditions" onclick="homeConditions(3)">3</input><br>
+      <input type="radio" name="livingConditions" onclick="homeConditions(4)">4</input><br>
+      <input type="radio" name="livingConditions" onclick="homeConditions(5)">5</input><br>
+      <input type="radio" name="livingConditions" onclick="homeConditions(6)">6</input><br>
+      <input type="radio" name="livingConditions" onclick="homeConditions(7)">7</input><br>
+      <input type="radio" name="livingConditions" onclick="homeConditions(8)">8</input><br>
+      <input type="radio" name="livingConditions" onclick="homeConditions(9)">9</input><br>
+      <input type="radio" name="livingConditions" onclick="homeConditions(10)">10</input><br>
+
+    </div>
+
+    <!--Eighth question of the survey  -->
+    <div class="myDiv ">
+      <h3>8. On a scale of 1 - 10, how has the pandemic poorly affected your mental health? 1 being not at all and 10 being tremendous negative affects.</h3>
+
+      <input type="radio" name="mental" onclick="mentalHealth(1)">1</input><br>
+      <input type="radio" name="mental" onclick="mentalHealth(2)">2</input><br>
+      <input type="radio" name="mental" onclick="mentalHealth(3)">3</input><br>
+      <input type="radio" name="mental" onclick="mentalHealth(4)">4</input><br>
+      <input type="radio" name="mental" onclick="mentalHealth(5)">5</input><br>
+      <input type="radio" name="mental" onclick="mentalHealth(6)">6</input><br>
+      <input type="radio" name="mental" onclick="mentalHealth(7)">7</input><br>
+      <input type="radio" name="mental" onclick="mentalHealth(8)">8</input><br>
+      <input type="radio" name="mental" onclick="mentalHealth(9)">9</input><br>
+      <input type="radio" name="mental" onclick="mentalHealth(10)">10</input><br>
+
+    </div>
+
+    <!--Nineth question of the survey  -->
+    <div class="myDiv ">
+      <h3>9. Are you currently employed?</h3>
+
+      <input type="radio" name="unemployed" onclick="unemployed('yes')">Yes</input><br>
+      <input type="radio" name="unemployed" onclick="unemployed('no')">No</input><br>
+    </div>
+
+    <!--Tenth question of the survey  -->
+    <div class="myDiv ">
+      <h3>10. Are basic necessities accessible to you(toilet paper, drinking water, etc)?</h3>
+
+      <input type="radio" name="basic" onclick="necessities('yes')">Yes</input><br>
+      <input type="radio" name="basic" onclick="necessities('no')">No</input><br>
+
+    </div>
+
+
+    <!--Electonic signature of submitee-->
+    <div class="myDiv ">
+      <h3>Please put in your electronic signature</h3>
+      <input type="text" placeholder="Electronic signature " onchange="electronicSignature()"  id="Signature">
+    </div>
+
+    <!--Electonic signature of submitee-->
+    <div class="myDiv ">
+      <h3>Please input your email</h3>
+      <input type="email" placeholder="Email adress " onchange="email()" id="enterEmail">
+    </div>
+
+    <!--Submit button for when you are done with the survey -->
+    <div class="myDiv">
+      <button onclick="submit()">SUBMIT</button>
+      <p id="Error"></p>
+    </div>
+
+    <!--link to a website where you can get you vaccine appointment-->
+    <div class="myDiv ">
+      <p>Made by Hameez Iqbal, Shardul Bhardwaj, and Brandon Nguyen</p>
+          <!--link to other websites-->
+          <ul>
+          <!--Link to vaccine site-->
+          <li><a href="info.html" target="_blank">for information on how to get you vaccine</a></li>
+          <!--Site for information to avoid covid-->
+          <li><a href="info page.html" target="_blank">information on Covid-19 </a></li>
+          <!--Find your Mississauga ward here-->
+          <li><a href="wards.html" target="_blank">Wards in Mississauga </a></li>
+          <!--UML Diagrams for our project-->
+          <li><a href="uml.html" target="_blank">UML Diagrams </a></li>
+          <!--Project goal-->
+          <li><a href="Software Scope.html" target="_blank">Information on project </a></li>
+        </ul>
+    </div>
+
+  </body>
+</html>
